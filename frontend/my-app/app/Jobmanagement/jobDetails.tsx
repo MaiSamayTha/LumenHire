@@ -97,7 +97,7 @@ export default function JobDetails({ changeApplication }: Props) {
                 .split(",")
                 .map((skill: string) => skill.trim())
                 .filter(Boolean)
-                .map((skill) => (
+                .map((skill: string) => (
                   <Badge key={skill} variant="secondary" className="bg-white/10 px-3 py-1 text-xs text-slate-100">
                     {skill}
                   </Badge>
